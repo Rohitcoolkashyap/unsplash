@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+.main {
+  background-color: #ffffff;
+  min-height: 100vh;
+
+  .main-content {
+    @extend .flexbox;
+
+    .main__nav {
+      @extend .flexbox;
+      justify-content: start;
+
+      li {
+        margin-right: 30px;
+        padding: 10px;
+      }
+    }
+    .main__nav2 {
+      @extend .flexbox;
+      padding: 10px;
+
+      margin-right: 10px;
+    }
+  }
+}
+.photos {
+  @extend .flexbox;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.photo {
+  margin: 20px;
+}
+.loading1 {
+  position: relative;
+  left: 40%;
+  right: 50%;
+  @extend .flexbox;
+}

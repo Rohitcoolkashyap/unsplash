@@ -1,0 +1,76 @@
+@import "./variables.scss";
+
+.header {
+  background-image: url("http://wallpaperheart.com/wp-content/uploads/2018/04/wallpaper.wiki-Cool-nature-backgrounds-hd-resolution-nature-background-image-hd.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  top: -60px;
+
+  .header__cover {
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+    left: 50px;
+    right: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 130px;
+    position: absolute;
+
+    .header__1 {
+      padding: 10px;
+
+      @extend .flexbox;
+      background-color: #ffffff;
+      border-radius: 10px;
+      .header__main__nav {
+        @extend .flexbox;
+        li {
+          margin-right: 20px;
+          &:hover {
+            font-size: 18px;
+          }
+        }
+        li a {
+          font-weight: 300;
+        }
+      }
+    }
+
+    .header2 {
+      display: grid;
+      place-items: center;
+      // z-index: 100;
+      background-image: url("http://wallpaperheart.com/wp-content/uploads/2018/04/wallpaper.wiki-Cool-nature-backgrounds-hd-resolution-nature-background-image-hd.jpg");
+      background-color: #cccccc;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 35vh;
+      width: 80%;
+      // position: fixed;
+
+      .header2__content {
+        color: #474545;
+
+        > h1 {
+          font-size: 38px;
+          margin-bottom: 10px;
+          font-weight: 00;
+        }
+        > p {
+        }
+        .header__middle {
+          padding: 10px;
+          border-radius: 5px;
+          background-color: #ffffff;
+          margin-top: 20px;
+
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
