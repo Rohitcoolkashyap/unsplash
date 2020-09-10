@@ -12,7 +12,7 @@ export default function Image() {
      const fetchImages = async (count = 10) => {
        const apiRoot = "https://api.unsplash.com/collections/1580860/photos";
 
-       const accessKey = "JJXOxyI3GNzNBxurv646HxxC4_aKtv7qZXfj9wdGWEc";
+       const accessKey = process.env.ACCESS_KEY;
 
        await axios
          .get(`${apiRoot}/?client_id=${accessKey}&count=${count}`)
