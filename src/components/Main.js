@@ -11,11 +11,11 @@ export default function Main() {
       <div className="main-content">
         <ul className="main__nav">
           <Link to="/" onClick={() => setCheck(true)}>
-            <li>Trending</li>
+            <li style={{ color: check && "grey" }}>Trending</li>
           </Link>
 
           <Link to="/image2" onClick={() => setCheck(false)}>
-            <li>new</li>
+            <li style={{ color: !check && "lightblue" }}>new</li>
           </Link>
         </ul>
 
@@ -29,7 +29,7 @@ export default function Main() {
         </ul>
       </div>
 
-      {check ? <Image /> : <Image2 />}
+      <div className="container">{check ? <Image /> : <Image2 />}</div>
     </div>
   );
 }

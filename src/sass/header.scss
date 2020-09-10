@@ -74,3 +74,19 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    margin: auto;
+    .header__cover {
+      width: 80%;
+      margin: auto;
+      position: static;
+      .header2 {
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+}
